@@ -1,7 +1,15 @@
+body {
+	color: blue;
+}
+
 nav {
 	background-color: #E9937F;
 }
 
 ul {
 	display: inline;
+}
+
+p {
+	color: red;
 }
