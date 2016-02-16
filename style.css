@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* 
 The above ensures the CSS is read
-Try to find a proper way to do it
+Need to find a better way of doing this
 */
 
 * {
@@ -11,8 +11,16 @@ Try to find a proper way to do it
 	text-align: center;
 }
 
+/* Main html including "sticky footer" rules */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
-	color: #B3DEC1;;
+    margin-bottom: 60px; /* bottom = footer height */
+	color: #B3DEC1;
 	background-color: #F6F1D1;
 }
 
@@ -21,39 +29,49 @@ nav {
 	height: 60px;
 }
 
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #C8E998;
+	color: #F6F1D1;
+}
+
+/* Lists */
+
 ul {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: 20px 0 20px 0;
 }
 
 li {
 	display: inline;
-	padding-left: 20px;
-	padding-right: 20px;
+	padding: 0 20px 0 20px;
 	font-size: 20px;
 }
 
+/* Links */
+
 a {
 	text-decoration: none;
+	color: #B3DEC1;
+}
+
+#anav {
 	color: #F6F1D1;
 }
+
+/* Text */
 
 h1 {
 	padding-top: 50px;
 	font-size: 80px;
 }
 
-p {
-	font-size: 35px;
-}
-
-footer {
-	background-color: #C8E998;
-	color: #F6F1D1;
-	bottom:0;
-    width:100%;
-    height:auto;
-    position: fixed;
+.hsecond {
+	padding-top: 25px;
+	font-size: 70px;
 }
 
 h3 {
@@ -61,30 +79,38 @@ h3 {
 	padding-bottom: 15px;
 }
 
-.second-headers {
-	padding-top: 50px;
-	font-size: 70px;
+p {
+	font-size: 35px;
 }
 
-.second-paras {
-	font-size: 25px;
+.pabout {
 	padding-bottom: 20px;
+}
+
+/* Divs */
+
+.pplan {
+	font-size: 20px;
+}
+
+#currently {
+	padding-top: 20px;
+}
+
+
+#follow {
+	padding: 20px 0 30px 0;
+}
+
+/* Images */
+
+.logo {
+	padding: 0 30px 0 30px;
 }
 
 img {
 	display: inline;
 	width: 200px;
 	height: auto;
-}
-
-#follow {
-	padding-top: 150px;
-}
-
-/* 
-Need to change the distance/padding/margin 
-between "Follow me on" and the logos
-*/
-.logo {
-	padding: 0 30px 30px 30px;
+	padding: 0 30px 0 30px;
 }
