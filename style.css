@@ -1,4 +1,8 @@
 @charset "utf-8";
+/* 
+The above ensures the CSS is read
+Try to find a proper way to do it
+*/
 
 * {
 	margin: 0;
@@ -8,7 +12,7 @@
 }
 
 body {
-	color: #B3DEC1;
+	color: #B3DEC1;;
 	background-color: #F6F1D1;
 }
 
@@ -57,7 +61,30 @@ h3 {
 	padding-bottom: 15px;
 }
 
+.second-headers {
+	padding-top: 50px;
+	font-size: 70px;
+}
 
+.second-paras {
+	font-size: 25px;
+	padding-bottom: 20px;
+}
 
+img {
+	display: inline;
+	width: 200px;
+	height: auto;
+}
 
+#follow {
+	padding-top: 150px;
+}
 
+/* 
+Need to change the distance/padding/margin 
+between "Follow me on" and the logos
+*/
+.logo {
+	padding: 0 30px 30px 30px;
+}
